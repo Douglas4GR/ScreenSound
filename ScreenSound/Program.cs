@@ -1,17 +1,14 @@
-﻿Album albumDoMisfits = new Album();
+﻿Banda bandaMisfits = new Banda();
+bandaMisfits.Nome = "Misfits";
+
+Album albumDoMisfits = new Album();
 albumDoMisfits.Nome = "Famous Monsters";
 
-Musica musica1 = new Musica();
-musica1.nome = "Scream";
-musica1.artista = "Misfits";
-musica1.duracao = 180;
-musica1.disponivel = true;
-
-Musica musica2 = new Musica();
-musica2.nome = "Astro Zombies";
-musica2.artista = "Misfits";
-musica2.duracao = 210;
-musica2.disponivel = false;
-
+Musica musica1 = new Musica("Scream!", bandaMisfits, 3, true);
 albumDoMisfits.AdicionarMusica(musica1);
+
+Musica musica2 = new Musica("Helena", bandaMisfits, 4, true);
 albumDoMisfits.AdicionarMusica(musica2);
+
+bandaMisfits.AdicionarAlbum(albumDoMisfits);
+bandaMisfits.ExibirDiscografia();

@@ -10,6 +10,6 @@
             musicas.Add(musica);
         }
 
-        Console.WriteLine($"Música '{musica.nome}' adicionada ao álbum '{Nome}'.");
+        Console.WriteLine($"Música '{musica.Nome}' adicionada ao álbum '{Nome}'.");
     }
 }
