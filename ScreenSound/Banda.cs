@@ -2,6 +2,10 @@
 {
     private List<Album> albuns = new List<Album>();
     public string Nome { get; set; }
+    public Banda(string nome)
+    {
+        Nome = nome;
+    }
     public void AdicionarAlbum(Album album)
     {
         if (albuns != null)
